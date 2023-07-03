@@ -39,7 +39,7 @@ void main() {
         }
     }
 
-    g[0] = 0; // Completion time of the first process is 0
+    g[0] = b[0]; // Completion time of the first process is 0
 
     for (i = 1; i < n; i++) {
         g[i] = g[i - 1] + b[i - 1]; // Calculate completion time for each process
